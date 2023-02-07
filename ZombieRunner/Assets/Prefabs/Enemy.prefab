@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3322607047674423256}
   - component: {fileID: 3322607047674423259}
   - component: {fileID: 3322607047674423260}
+  - component: {fileID: 3322607049546117564}
+  - component: {fileID: 8245766418472239463}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -115,7 +117,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -137,6 +139,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   chaseRange: 8
+--- !u!114 &3322607049546117564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322607047674423258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef7cafaf15de1d45b332d9abf1abc11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
+--- !u!95 &8245766418472239463
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3322607047674423258}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8db24d6a283a26b4eb625b3c43e29d61, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &7789843523688054995
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +200,7 @@ Transform:
   m_GameObject: {fileID: 7789843523688054995}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.005, y: 0.569, z: 0.513}
-  m_LocalScale: {x: 0.53902, y: 0.095278, z: 0.79957}
+  m_LocalScale: {x: 0.53902, y: 0.25479245, z: 1.3453014}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3322607047674423263}
@@ -199,7 +234,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 352a6b7b8e659844aa4536444d36af57, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
