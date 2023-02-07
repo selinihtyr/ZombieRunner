@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    public void ReloadGame()
+    public void ReloadScene()
     {
         SceneManager.LoadScene(0);
     }
-
-    public void QuitGame()
+ 
+    public void QuitScene()
     {
         Application.Quit();
     }
