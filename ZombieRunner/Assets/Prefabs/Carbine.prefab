@@ -261,6 +261,8 @@ GameObject:
   - component: {fileID: 2337074158996965286}
   - component: {fileID: 2337074159000356742}
   - component: {fileID: 2337074158999389510}
+  - component: {fileID: 7486223405252525473}
+  - component: {fileID: 4953339759830811357}
   m_Layer: 0
   m_Name: Carbine
   m_TagString: Untagged
@@ -277,7 +279,7 @@ Transform:
   m_GameObject: {fileID: 2337074158997199750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 3, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2337074158996965284}
@@ -317,7 +319,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25f311c6bbd46e0448befa180cda78ed, type: 2}
+  - {fileID: 2100000, guid: da64387bddaaa0743857c245797b3858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -339,6 +341,39 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7486223405252525473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c3fbc388754f3740b562145ceda92be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPcamera: {fileID: 1164256730499838886, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
+  range: 100
+  damage: 30
+  muzzleFlash: {fileID: 5918279961591809021, guid: bc2d6dedde6296b42ac4d1afd2c1fdbd, type: 3}
+  hitEffect: {fileID: 6434281176196652892, guid: 0ba94308314a2d44ab84b89b2d9c8009, type: 3}
+  ammoSlot: {fileID: 0}
+--- !u!114 &4953339759830811357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2337074158997199750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27cecf63c69e2b44ab53c3805917208e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fpsCamera: {fileID: 0}
+  zoomedOutFOV: 40
+  zoomedInFOV: 20
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0

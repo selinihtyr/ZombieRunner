@@ -71,10 +71,10 @@ namespace StarterAssets
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
 		private GameObject _mainCamera;
+        public object mouseLook;
+        private const float _threshold = 0.01f;
 
-		private const float _threshold = 0.01f;
-
-		private bool IsCurrentDeviceMouse
+		public bool IsCurrentDeviceMouse
 		{
 			get
 			{
@@ -129,7 +129,7 @@ namespace StarterAssets
 			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
 		}
 
-		private void CameraRotation()
+		public void CameraRotation()
 		{
 			// if there is an input
 			if (_input.look.sqrMagnitude >= _threshold)
