@@ -355,9 +355,10 @@ MonoBehaviour:
   FPcamera: {fileID: 1164256730499838886, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
   range: 100
   damage: 30
-  muzzleFlash: {fileID: 5918279961591809021, guid: bc2d6dedde6296b42ac4d1afd2c1fdbd, type: 3}
+  muzzleFlash: {fileID: 5410668559058605013}
   hitEffect: {fileID: 6434281176196652892, guid: 0ba94308314a2d44ab84b89b2d9c8009, type: 3}
   ammoSlot: {fileID: 0}
+  timeBetweenShots: 0.5
 --- !u!1 &2337074158997199752
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +701,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
+--- !u!198 &5410668559058605013 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
+  m_PrefabInstance: {fileID: 8736678555442479753}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6287905610139432090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}

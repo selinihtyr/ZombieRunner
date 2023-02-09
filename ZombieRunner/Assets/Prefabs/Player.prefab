@@ -129,6 +129,10 @@ PrefabInstance:
       propertyPath: m_CameraCutEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3441439019809349891, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 1794972616091796436}
     - target: {fileID: 5533925199147963408, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
       propertyPath: range
       value: 100
@@ -153,6 +157,14 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 114884613}
+    - target: {fileID: 6454374310616988365, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 1794972616091796436}
+    - target: {fileID: 8919985006706865945, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 1794972616091796436}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
 --- !u!4 &1406636354280277990 stripped
@@ -300,6 +312,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
+--- !u!114 &1794972616091796436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+  m_PrefabInstance: {fileID: 8033744667334583687}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794972616091796435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6205710836300872335 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4135013735270702856, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
