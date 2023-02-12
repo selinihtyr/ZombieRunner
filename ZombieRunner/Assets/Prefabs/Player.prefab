@@ -53,6 +53,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 114884613}
+    - target: {fileID: 264908757232682170, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 908555386450468479, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
       propertyPath: ammoSlot
       value: 
@@ -145,6 +149,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 114884613}
+    - target: {fileID: 5533925199147963408, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6382590073557272677, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
       propertyPath: range
       value: 70
@@ -157,6 +165,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 114884613}
+    - target: {fileID: 6382590073557272677, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6454374310616988365, guid: 9f82c576b05dc5d4ba0882de864d4bd3, type: 3}
       propertyPath: fpsController
       value: 
@@ -285,7 +297,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825e25f1eed569143b584629044544c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - ammoType: 0
+    ammoAmount: 10
+  - ammoType: 1
+    ammoAmount: 20
+  - ammoType: 2
+    ammoAmount: 8
 --- !u!114 &1565245139
 MonoBehaviour:
   m_ObjectHideFlags: 0
